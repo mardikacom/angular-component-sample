@@ -1,0 +1,11 @@
+<mat-card class="the-card">
+  <mat-card-content class="the-content">
+    <mat-form-field class="full-width">
+      <input matInput [matDatepicker]="picker" placeholder="Pick A Date" [readonly]="true" [formControl]="sessDate"
+             (dateChange)="addEvent('change', $event)">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+  </mat-card-content>
+</mat-card>
+
